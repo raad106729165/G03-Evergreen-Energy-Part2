@@ -1,0 +1,5 @@
+# Stop browsers from opening include files and the SQL dump directly.
+<FilesMatch "\.(inc|sql)$">
+    Require all denied
+</FilesMatch>
+Options -Indexes
